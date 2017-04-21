@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">ListView</string>
+    <string name="areas">Areas</string>
+    <string name="cuadrado">Cuadrado</string>
+    <string name="rectangulo">Rectangulo</string>
+    <string name="operaciones_realizadas">Operaciones Realizadas</string>
+    <string name="operacion">Operacion</string>
+    <string name="datos">Datos</string>
+    <string name="resultados">Resultados</string>
+    <string name="valor_lado">Valor Del Lado:</string>
+    <string name="numero">Numero</string>
+    <string name="calcular">Calcular</string>
+    <string name="borrar">Borrar</string>
+    <string name="mensaje">Datos Calculados</string>
+    <string-array name="opciones">
+        <item>@string/areas</item>
+        <item>@string/operaciones_realizadas</item>
+    </string-array>
+    <string-array name="areas">
+        <item>@string/cuadrado</item>
+        <item>@string/rectangulo</item>
+    </string-array>
+
 </resources>

@@ -9,20 +9,21 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class Principal extends AppCompatActivity {
+public class Areas extends AppCompatActivity {
 
     private ListView ls;
     private Resources res;
     private String[] opc;
     private Intent i;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_principal);
+        setContentView(R.layout.activity_areas);
 
-        ls = (ListView)findViewById(R.id.lvOpciones);
+        ls = (ListView)findViewById(R.id.lvAreas);
         res = this.getResources();
-        opc = res.getStringArray(R.array.opciones);
+        opc = res.getStringArray(R.array.areas);
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, opc);
 
         ls.setAdapter(adapter);
@@ -32,14 +33,13 @@ public class Principal extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 switch (position){
                     case 0:
-                        i = new Intent(Principal.this, Areas.class);
+                        i = new Intent(Areas.this, CalculoCuadrado.class);
                         startActivity(i);
                         break;
                     case 1:
-                        i = new Intent(Principal.this, OperacionesRealizadas.class);
+                        i= new Intent(Areas.this, CalculoRectangulo.class);
                         startActivity(i);
                 }
-
             }
         });
 

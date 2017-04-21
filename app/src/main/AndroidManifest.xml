@@ -15,6 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Areas" />
+        <activity android:name=".Cuadrado" />
+        <activity android:name=".Triangulo" />
+        <activity android:name=".CalculoCuadrado" />
+        <activity android:name=".CalculoRectangulo" />
+        <activity android:name=".OperacionesRealizadas"></activity>
     </application>
 
 </manifest>
