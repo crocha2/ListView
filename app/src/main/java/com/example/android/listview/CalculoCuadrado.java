@@ -31,15 +31,17 @@ public class CalculoCuadrado extends AppCompatActivity {
     }
 
     public void Calculo(View v){
-        String operacion = "CUADRADO";
+        String operacion = res.getString(R.string.cuadrado), num="", aux ="",resu;
         int valor;
         int resultado;
 
-        valor = Integer.parseInt(cajaNumero.getText().toString());
+        num = cajaNumero.getText().toString();
+        valor = Integer.parseInt(num);
         resultado = valor*valor;
+        resu = ""+resultado;
 
-
-        Operacion op = new Operacion(operacion, valor, resultado);
+        aux = "Lado: "+num;
+        Operacion op = new Operacion(operacion,aux, resu);
         op.guardar();
         new AlertDialog.Builder(this).setMessage(res.getString(R.string.mensaje)).show();
 

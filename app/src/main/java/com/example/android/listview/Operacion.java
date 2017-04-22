@@ -7,28 +7,28 @@ package com.example.android.listview;
 public class Operacion {
 
     private String nombreOperacion;
-    private int valorLado;
-    private int resultado;
+    private String valorLado;
+    private String resultado;
 
-    public Operacion(String nombreOperacion, int resultado, int valorLado) {
+    public Operacion(String nombreOperacion, String valorLado, String resultado) {
         this.nombreOperacion = nombreOperacion;
-        this.resultado = resultado;
         this.valorLado = valorLado;
+        this.resultado = resultado;
     }
 
-    public int getResultado() {
+    public String getResultado() {
         return resultado;
     }
 
-    public void setResultado(int resultado) {
+    public void setResultado(String resultado) {
         this.resultado = resultado;
     }
 
-    public int getValorLado() {
+    public String getValorLado() {
         return valorLado;
     }
 
-    public void setValorLado(int valorLado) {
+    public void setValorLado(String valorLado) {
         this.valorLado = valorLado;
     }
 
