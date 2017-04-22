@@ -13,8 +13,8 @@
     <string name="borrar">Borrar</string>
     <string name="mensaje">Datos Calculados</string>
     <string name="lado">Lado:</string>
-    <string name="base">Base</string>
-    <string name="altura">Altura</string>
+    <string name="base">Base:</string>
+    <string name="altura">Altura:</string>
     <string-array name="opciones">
         <item>@string/areas</item>
         <item>@string/operaciones_realizadas</item>

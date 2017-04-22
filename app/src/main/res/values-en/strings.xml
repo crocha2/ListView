@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ListView</string>
+    <string name="altura">Height:</string>
+    <string name="areas">Area</string>
+    <string name="base">Base:</string>
+    <string name="borrar">Clear</string>
+    <string name="calcular">Calculate</string>
+    <string name="cuadrado">Square</string>
+    <string name="datos">Date</string>
+    <string name="lado">Side:</string>
+    <string name="mensaje">Calculated Data</string>
+    <string name="numero">Number</string>
+    <string name="operacion">Operation</string>
+    <string name="operaciones_realizadas">Operations Performed</string>
+    <string name="rectangulo">Rectangle</string>
+    <string name="resultados">Results</string>
+    <string name="valor_lado">Value On The Side:</string>
+</resources>
