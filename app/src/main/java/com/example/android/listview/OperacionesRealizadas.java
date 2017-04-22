@@ -30,7 +30,7 @@ public class OperacionesRealizadas extends AppCompatActivity {
 
             c1.setText(""+(i+1));
             c2.setText(operaciones.get(i).getNombreOperacion());
-            c3.setText(operaciones.get(i).getValorLiado());
+            c3.setText(operaciones.get(i).getValorLado());
             c4.setText(operaciones.get(i).getResultado());
 
             fila.addView(c1);

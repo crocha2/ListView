@@ -7,29 +7,13 @@ package com.example.android.listview;
 public class Operacion {
 
     private String nombreOperacion;
-    private int valorLiado;
+    private int valorLado;
     private int resultado;
 
-    public Operacion(String nombreOperacion, int valorLiado, int resultado) {
+    public Operacion(String nombreOperacion, int resultado, int valorLado) {
         this.nombreOperacion = nombreOperacion;
-        this.valorLiado = valorLiado;
         this.resultado = resultado;
-    }
-
-    public String getNombreOperacion() {
-        return nombreOperacion;
-    }
-
-    public void setNombreOperacion(String nombreOperacion) {
-        this.nombreOperacion = nombreOperacion;
-    }
-
-    public int getValorLiado() {
-        return valorLiado;
-    }
-
-    public void setValorLiado(int valorLiado) {
-        this.valorLiado = valorLiado;
+        this.valorLado = valorLado;
     }
 
     public int getResultado() {
@@ -38,6 +22,22 @@ public class Operacion {
 
     public void setResultado(int resultado) {
         this.resultado = resultado;
+    }
+
+    public int getValorLado() {
+        return valorLado;
+    }
+
+    public void setValorLado(int valorLado) {
+        this.valorLado = valorLado;
+    }
+
+    public String getNombreOperacion() {
+        return nombreOperacion;
+    }
+
+    public void setNombreOperacion(String nombreOperacion) {
+        this.nombreOperacion = nombreOperacion;
     }
 
     public void guardar(){

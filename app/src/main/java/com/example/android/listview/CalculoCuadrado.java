@@ -12,6 +12,8 @@ public class CalculoCuadrado extends AppCompatActivity {
 
     private EditText cajaNumero;
     private Resources res;
+    private Intent i;
+    private Bundle b;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,22 +24,32 @@ public class CalculoCuadrado extends AppCompatActivity {
 
         res = this.getResources();
 
+        i = new Intent(this, Cuadrado.class);
+
+        b = new Bundle();
 
     }
 
     public void Calculo(View v){
         String operacion = "CUADRADO";
         int valor;
-        int resultado = 0;
+        int resultado;
 
-        valor = Integer.parseInt(cajaNumero.toString());
-
+        valor = Integer.parseInt(cajaNumero.getText().toString());
         resultado = valor*valor;
+
 
         Operacion op = new Operacion(operacion, valor, resultado);
         op.guardar();
-
         new AlertDialog.Builder(this).setMessage(res.getString(R.string.mensaje)).show();
+
+        b.putInt("Resultado", resultado);
+
+
+        i.putExtras(b);
+
+        startActivity(i);
+
         limpiar();
     }
 
